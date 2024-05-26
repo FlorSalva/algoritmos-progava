@@ -1,5 +1,5 @@
 public class Main {
-    private static Integer inf = 999;
+    public static Integer inf = 999;
     public static void main(String[] args) {
         int[][] matrizDistancias = {
                 {inf, 10, inf, 30, 200},
@@ -8,7 +8,10 @@ public class Main {
                 {inf, inf, 20, inf, 60},
                 {inf, inf, inf, inf, inf}
         };
+        int nodoInicial = 0;
 
-        Dijkstra.calcularDistanciasMinimas(matrizDistancias, 0, inf);
+        Dijkstra dijkstra = new Dijkstra(nodoInicial, matrizDistancias);
+        dijkstra.calcularDistanciasMinimas();
+        dijkstra.mostrarDistancias();
     }
 }
