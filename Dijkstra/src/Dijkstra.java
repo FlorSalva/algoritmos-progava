@@ -24,11 +24,13 @@ public class Dijkstra {
         while (!priorityQueue.isEmpty() && priorityQueue.peek() != matrizCostos.length) {
             int w = priorityQueue.poll();
             for (int i = 0; i < matrizCostos.length; i++) {
-                if (matrizCostos[w][i] != 0) {
+                if (matrizCostos[w][i] != Main.inf) {
                     int nuevaDist = distancias[w] + matrizCostos[w][i];
                     if (nuevaDist < distancias[i]) {
                         distancias[i] = nuevaDist;
-                        priorityQueue.add(i);
+                        if (!priorityQueue.contains(i)) {
+                            priorityQueue.add(i);
+                        }
                     }
                 }
             }
