@@ -2,18 +2,19 @@ public class FloydWarshall {
     private int[][] matDist;
     private int tamMat;
 
-    public FloydWarshall(int[][] matDist, int tamMat) {
+    public FloydWarshall(int[][] matDist) {
         this.matDist = matDist;
-        this.tamMat = tamMat;
+        this.tamMat = matDist.length;
     }
 
     public void calcularCostoMinimo() {
         for (int k = 0; k < tamMat; k++) {
             for (int i = 0; i < tamMat; i++) {
                 for (int j = 0; j < tamMat; j++) {
-                    // Actualizamos la matDistancia matDist[i][j] si el camino pasando por k es más corto
-                    if (matDist[i][k] + matDist[k][j] < matDist[i][j]) {
-                        matDist[i][j] = matDist[i][k] + matDist[k][j];
+                    int costoMin = matDist[i][k] + matDist[k][j];
+                    // Actualizamos la matDistancia matDist[i][j] si el camino pasando por k es mas corto
+                    if (costoMin < matDist[i][j]) {
+                        matDist[i][j] = costoMin;
                     }
                 }
             }
@@ -21,7 +22,7 @@ public class FloydWarshall {
     }
 
     void mostrarMatrizSolucion() {
-        System.out.println("La matriz de matDistancias más cortas entre cada par de vértices:");
+        System.out.println("La matriz de matDistancias mas cortas entre cada par de vertices:");
         for (int i = 0; i < tamMat; i++) {
             for (int j = 0; j < tamMat; j++) {
                 if (matDist[i][j] == Main.INF)

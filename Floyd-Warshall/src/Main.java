@@ -6,7 +6,7 @@ public class Main {
                 {3, 0, INF},
                 {INF, 2, 0},
         };
-        FloydWarshall fw = new FloydWarshall(matGrafos, matGrafos.length);
+        FloydWarshall fw = new FloydWarshall(matGrafos);
         fw.calcularCostoMinimo();
         fw.mostrarMatrizSolucion();
     }
