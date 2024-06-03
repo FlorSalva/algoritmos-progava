@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,9 +14,6 @@ public class Main {
         //Integer[] array = {Integer.MIN_VALUE, 0, Integer.MAX_VALUE};
         QuickSort.iQuickSortEnvol(array);
 
-        for(int i = 0; i < array.length; i++){
-            System.out.print(array[i]);
-            System.out.print(" ");  
-        }
+        System.out.println(Arrays.toString(array));
     }
 }
