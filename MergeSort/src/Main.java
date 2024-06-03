@@ -1,8 +1,9 @@
+import java.util.Arrays;
+
 public class Main {
 
     
     public static void main(String[] args) {
-
         Integer[] array = {12,45,6,2,3,13,4};
         //Integer[] array = {};
         //Integer[] array = {1};
@@ -14,9 +15,6 @@ public class Main {
         //Integer[] array = {Integer.MIN_VALUE, 0, Integer.MAX_VALUE};
         MergeSort.mergeSortENCL(array);
 
-        for(int i = 0; i < array.length; i++){
-            System.out.print(array[i]);
-            System.out.print(" ");  
-        }
+        System.out.println(Arrays.toString(array));
     }
 }

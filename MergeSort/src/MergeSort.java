@@ -1,13 +1,13 @@
 public class MergeSort {
 
-    static void mergeSortENCL(Integer[] array){
+    public static <T extends Comparable<T>> void mergeSortENCL(T[] array){
         int techo = array.length;
         int piso = 0;
 
-        mergeSort(array,piso,techo);
+        mergeSort(array, piso, techo);
     }
 
-    static void mergeSort(Integer[] array, int piso, int techo) {
+    private static <T extends Comparable<T>> void mergeSort(T[] array, int piso, int techo) {
         if (techo - piso <= 1) {
             return;
         }
@@ -17,17 +17,13 @@ public class MergeSort {
         mergeSort(array, piso, medio);
         mergeSort(array, medio, techo);
     
-        merge(array, piso, medio, techo);
-    }
-    
-    static void merge(Integer[] array, int piso, int medio, int techo) {
         int verde = piso;
         int naranja = medio;
-        int[] array1 = new int[techo - piso];
+        T[] array1 = (T[]) new Comparable[techo - piso];
         int celeste = 0;
     
         while (verde < medio && naranja < techo) {
-            if (array[verde] <= array[naranja]) {
+            if (array[verde].compareTo(array[naranja]) <= 0) {
                 array1[celeste] = array[verde];
                 celeste++;
                 verde++;
@@ -54,5 +50,4 @@ public class MergeSort {
             array[piso + i] = array1[i];
         }
     }
-    
 }
