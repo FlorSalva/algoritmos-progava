@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BogoSort/BogoSort.iml" filepath="$PROJECT_DIR$/BogoSort/BogoSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BubbleSort/BubbleSort.iml" filepath="$PROJECT_DIR$/BubbleSort/BubbleSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dijkstra/Dijkstra.iml" filepath="$PROJECT_DIR$/Dijkstra/Dijkstra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Floyd-Warshall/Floyd-Warshall.iml" filepath="$PROJECT_DIR$/Floyd-Warshall/Floyd-Warshall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Grafos/Grafos.iml" filepath="$PROJECT_DIR$/Grafos/Grafos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Heap/Heap.iml" filepath="$PROJECT_DIR$/Heap/Heap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MergeSort/MergeSort.iml" filepath="$PROJECT_DIR$/MergeSort/MergeSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PriorityQueue/PriorityQueue.iml" filepath="$PROJECT_DIR$/PriorityQueue/PriorityQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuickSort/QuickSort.iml" filepath="$PROJECT_DIR$/QuickSort/QuickSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SelectionSort/SelectionSort.iml" filepath="$PROJECT_DIR$/SelectionSort/SelectionSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShellSort/ShellSort.iml" filepath="$PROJECT_DIR$/ShellSort/ShellSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/algoritmos-progava.iml" filepath="$PROJECT_DIR$/.idea/algoritmos-progava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Grafos/coloreo/coloreo.iml" filepath="$PROJECT_DIR$/Grafos/coloreo/coloreo.iml" />
+    </modules>
+  </component>
+</project>
