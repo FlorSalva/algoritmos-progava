@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/ShellSort/ShellSort.iml" filepath="$PROJECT_DIR$/ShellSort/ShellSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/algoritmos-progava.iml" filepath="$PROJECT_DIR$/.idea/algoritmos-progava.iml" />
       <module fileurl="file://$PROJECT_DIR$/Grafos/coloreo/coloreo.iml" filepath="$PROJECT_DIR$/Grafos/coloreo/coloreo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Grafos/mst/mst.iml" filepath="$PROJECT_DIR$/Grafos/mst/mst.iml" />
     </modules>
   </component>
 </project>
