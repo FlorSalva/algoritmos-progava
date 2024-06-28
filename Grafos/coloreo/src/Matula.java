@@ -1,25 +1,25 @@
 import java.util.*;
 
 public class Matula {
-    public static ResultadoColoreo matula(Grafo grafo) {
+    public static ResultadoColoreo matula(GrafoColoreo grafoColoreo) {
         List<String> vertices = new ArrayList<>();
-        Grafo tempGrafo = new Grafo();
+        GrafoColoreo tempGrafoColoreo = new GrafoColoreo();
 
-        for (String vertice : grafo.obtenerVertices()) {
-            tempGrafo.agregarVertice(vertice);
+        for (String vertice : grafoColoreo.obtenerVertices()) {
+            tempGrafoColoreo.agregarVertice(vertice);
         }
-        for (String vertice : grafo.obtenerVertices()) {
-            for (String vecino : grafo.obtenerVecinos(vertice)) {
-                tempGrafo.agregarArista(vertice, vecino);
+        for (String vertice : grafoColoreo.obtenerVertices()) {
+            for (String vecino : grafoColoreo.obtenerVecinos(vertice)) {
+                tempGrafoColoreo.agregarArista(vertice, vecino);
             }
         }
 
-        while (!tempGrafo.obtenerVertices().isEmpty()) {
+        while (!tempGrafoColoreo.obtenerVertices().isEmpty()) {
             String verticeMenorGrado = null;
             int menorGrado = Integer.MAX_VALUE;
 
-            for (String vertice : tempGrafo.obtenerVertices()) {
-                int grado = tempGrafo.obtenerGrado(vertice);
+            for (String vertice : tempGrafoColoreo.obtenerVertices()) {
+                int grado = tempGrafoColoreo.obtenerGrado(vertice);
                 if (grado < menorGrado) {
                     menorGrado = grado;
                     verticeMenorGrado = vertice;
@@ -28,7 +28,7 @@ public class Matula {
 
             if (verticeMenorGrado != null) {
                 vertices.add(verticeMenorGrado);
-                tempGrafo.removerVertice(verticeMenorGrado);
+                tempGrafoColoreo.removerVertice(verticeMenorGrado);
             }
         }
 
@@ -40,7 +40,7 @@ public class Matula {
 
         for (String vertice : vertices) {
             Set<Integer> coloresUsadosSet = new HashSet<>();
-            for (String vecino : grafo.obtenerVecinos(vertice)) {
+            for (String vecino : grafoColoreo.obtenerVecinos(vertice)) {
                 if (color.containsKey(vecino)) {
                     coloresUsadosSet.add(color.get(vecino));
                 }

@@ -1,14 +1,14 @@
 import java.util.*;
 
 public class WelshPowell {
-    public static ResultadoColoreo welshPowell(Grafo grafo) {
-        List<String> vertices = grafo.obtenerVertices();
+    public static ResultadoColoreo welshPowell(GrafoColoreo grafoColoreo) {
+        List<String> vertices = grafoColoreo.obtenerVertices();
 
         // Hacemos un shuffle (mezcla) de los vertices para que el resultado no sea siempre el mismo
         Collections.shuffle(vertices);
 
         // Mezclamos los vertices segun su grado en orden descendente
-        vertices.sort((v1, v2) -> Integer.compare(grafo.obtenerGrado(v2), grafo.obtenerGrado(v1)));
+        vertices.sort((v1, v2) -> Integer.compare(grafoColoreo.obtenerGrado(v2), grafoColoreo.obtenerGrado(v1)));
 
         Map<String, Integer> colorMap = new HashMap<>();
         Map<Integer, List<String>> verticesPorColor = new HashMap<>();
@@ -27,7 +27,7 @@ public class WelshPowell {
                 for (String v : vertices) {
                     if (!colorMap.containsKey(v)) {
                         boolean puedeUsarColor = true;
-                        for (String vecino : grafo.obtenerVecinos(v)) {
+                        for (String vecino : grafoColoreo.obtenerVecinos(v)) {
                             if (colorMap.getOrDefault(vecino, -1) == colorActual) {
                                 puedeUsarColor = false;
                                 break;

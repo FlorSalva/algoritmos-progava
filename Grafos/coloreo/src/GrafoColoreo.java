@@ -3,10 +3,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Grafo {
+public class GrafoColoreo {
     private final Map<String, List<String>> matrizDeAdyacencia;
 
-    public Grafo() {
+    public GrafoColoreo() {
         matrizDeAdyacencia = new HashMap<>();
     }
 
