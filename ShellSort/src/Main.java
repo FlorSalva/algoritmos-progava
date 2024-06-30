@@ -1,5 +1,4 @@
 public class Main {
-
     public static void main(String[] args) {
         Integer[] array = {12,45,6,2,3,13,4};
         //Integer[] array = {};

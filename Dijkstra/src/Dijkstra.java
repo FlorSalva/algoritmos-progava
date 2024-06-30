@@ -17,13 +17,13 @@ public class Dijkstra {
         Arrays.fill(distancias, Main.inf);
         distancias[nodoInicio] = 0;
 
-        // Cola de prioridad = V - S
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Comparator.comparingInt(i -> distancias[i]));
         priorityQueue.add(nodoInicio);
 
+        // Mientras existan elementos en la cola y el nodo cabecera de dicha cola no sea el nodo final
         while (!priorityQueue.isEmpty() && priorityQueue.peek() != matrizCostos.length) {
             int w = priorityQueue.poll();
-            for (int i = 0; i < matrizCostos.length; i++) {
+            for (int i = 1; i < matrizCostos.length; i++) {
                 if (matrizCostos[w][i] != Main.inf) {
                     int nuevaDist = distancias[w] + matrizCostos[w][i];
                     if (nuevaDist < distancias[i]) {

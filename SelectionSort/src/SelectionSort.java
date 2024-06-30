@@ -19,7 +19,6 @@ public class SelectionSort {
         }
     }
 
-    // Método para imprimir el arreglo
     public static void printArray(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
