@@ -7,7 +7,6 @@ En el siguiente repositorio vamos a encontrar los proximos algoritmos:
 - Ordenamiento Quicksort
 - Ordenamiento MergeSort
 - Ordenamiento ShellSort
-- Cola de prioridad
-- Monticulo
+- Ordenamiento Bogosort
 - Algoritmo de Dijkstra
 - Algoritmo de Warshall
