@@ -1,5 +1,20 @@
 Bienvenido!
 
+Primer cuatrimestre de 2024
+
+Materia: Programación Avanzada
+
+Objetivo: Demostrar mediante código (con el lenguaje de programación Java) los distintos algoritmos mostrados durante la cursada
+
+Grupo N°3
+
+Integrantes:
+- Salvatierra Florencia
+- Barbaro Leonardo
+- Julia Patricio
+- Marco Diego
+- Pergola Juan Manuel
+
 En el siguiente repositorio vamos a encontrar los proximos algoritmos:
 
 - Ordenamiento por Burbujeo 
