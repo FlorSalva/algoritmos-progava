@@ -15,7 +15,7 @@ Integrantes:
 - Marco Diego
 - Pergola Juan Manuel
 
-En el siguiente repositorio vamos a encontrar los proximos algoritmos:
+En este repositorio vamos a encontrar los proximos algoritmos:
 
 - Ordenamiento por Burbujeo 
 - Ordenamiento por Seleccion
