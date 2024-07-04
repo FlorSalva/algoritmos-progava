@@ -12,3 +12,4 @@ En el siguiente repositorio vamos a encontrar los proximos algoritmos:
 - Algoritmo de Floyd-Warshall
 - Algoritmos de Coloreo (dentro de carpeta Grafos)
 - Algoritmos de MST (dentro de carpeta Grafos)
+- Priority Queue: https://github.com/diego856/hospital-priority-queue
