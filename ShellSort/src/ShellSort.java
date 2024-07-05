@@ -10,20 +10,17 @@ public class ShellSort {
         shellSort(array,shellSize);
     }
 
-    static  <T extends Comparable<T>> void shellSort(T[] array, int shellSize) {
-        if (shellSize < 1) {
-            return;
-        }
-        int shellpiso = 0;
-        int shelltecho = shellSize;
-        while (shelltecho < array.length) {
-            if (array[shellpiso].compareTo(array[shelltecho]) >= 0) {
-                aswap(array, shellpiso, shelltecho);
+    static <T extends Comparable<T>> void shellSort(T[] array) {
+        int n = array.length;
+       
+        for (int gap = n / 2; gap > 0; gap /= 2) {
+            for (int i = gap; i < n; i++) {
+                T temp = array[i];
+                int j;
+                for (j = i; j >= gap && array[j - gap].compareTo(temp) > 0; j -= gap) {
+                    array[j] = array[j - gap];
+                }
+                array[j] = temp;
             }
-            shelltecho++;
-            shellpiso++;
         }
-        shellSize--;
-        shellSort(array, shellSize);
     }
-}
