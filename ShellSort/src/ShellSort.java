@@ -6,7 +6,6 @@ public class ShellSort {
     }
     
     static  <T extends Comparable<T>> void shellSortENC(T[] array) {
-        int shellSize = (array.length) / 2;
         shellSort(array,shellSize);
     }
 
@@ -24,3 +23,4 @@ public class ShellSort {
             }
         }
     }
+}
